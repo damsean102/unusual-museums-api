@@ -21,7 +21,7 @@ class MuseumsList(Resource):
     def get(self):
         return MUSEUMS
 
-api.add_resource(MuseumsList, '/museums/')
+api.add_resource(MuseumsList, '/')
 
 
 class Museums(Resource):
@@ -31,7 +31,7 @@ class Museums(Resource):
         else:
             return MUSEUMS[museum_id]
 
-api.add_resource(Museums, '/museums/<museum_id>')
+api.add_resource(Museums, '/<museum_id>')
 
 if __name__ == "__main__":
     app.run(debug=True)
