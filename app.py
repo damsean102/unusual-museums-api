@@ -25,7 +25,7 @@ api.add_resource(MuseumsList, '/museums/')
 
 
 class Museums(Resource):
-  def get(self, museum_id):
+    def get(self, museum_id):
         if museum_id not in MUSEUMS:
             return "Not found", 404
         else:
@@ -34,5 +34,5 @@ class Museums(Resource):
 api.add_resource(Museums, '/museums/<museum_id>')
 
 if __name__ == "__main__":
-  app.run(debug=True)
+    app.run(debug=True)
 
