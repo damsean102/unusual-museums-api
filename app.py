@@ -28,5 +28,5 @@ class Museums(Resource):
 api.add_resource(Museums, '/<museum_id>')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
 
