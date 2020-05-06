@@ -1,6 +1,7 @@
-from flask import Flask
+from flask import Flask, send_from_directory
 from flask_restful import Resource, Api, reqparse
 import gspread
+import os
 
 app = Flask(__name__)
 api = Api(app)
@@ -26,6 +27,10 @@ class Museums(Resource):
         return(values_list)
 
 api.add_resource(Museums, '/<museum_id>')
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico')
 
 if __name__ == "__main__":
     app.run()
