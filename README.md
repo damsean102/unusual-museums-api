@@ -1,3 +1,5 @@
+![Deploy](https://github.com/damsean102/unusual-museums-api/workflows/Deploy/badge.svg?branch=master)
+
 # Unusual Museums
 An API with Python and Flask
 
