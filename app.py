@@ -8,7 +8,7 @@ load_dotenv()
 app = Flask(__name__)
 api = Api(app)
 
-api_base = '/api/museums'
+api_base = '/api'
 
 #Load env Fil
 google_creds = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
