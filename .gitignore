@@ -3,6 +3,9 @@
 
 .env
 
+/app
+/app/*
+
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
