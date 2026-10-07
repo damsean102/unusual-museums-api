@@ -11,7 +11,7 @@ api = Api(app)
 api_base = '/api'
 
 #Load env Fil
-google_creds = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+google_creds = /etc/secrets/google-credentials.json
 
 gc = gspread.service_account(filename=google_creds)
 sh = gc.open("Museums")
