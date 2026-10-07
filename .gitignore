@@ -3,9 +3,10 @@
 
 .env
 
-/app
-/app/*
+/app/google-credentials.json
 
+.venv/
+.DS_Store
 
 ### Python ###
 # Byte-compiled / optimized / DLL files

@@ -1,5 +1,5 @@
 from flask import Flask, abort, jsonify, send_from_directory
-from flask_restful import Resource, Api, reqparse
+from flask_restful import Resource, Api
 from dotenv import load_dotenv
 import gspread
 import os
@@ -28,7 +28,7 @@ api.add_resource(MuseumsList, api_base + '/')
 class Museums(Resource):
     def get(self, museum_id):
 
-        if museum_id.isnumeric() == False:
+        if not museum_id.isnumeric():
             abort(422, description="Unprocessable Entity")
 
         return museums[int(museum_id)]
@@ -50,4 +50,3 @@ def unprocessable_entity(e):
 
 if __name__ == "__main__":
     app.run(debug=True)
-
