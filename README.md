@@ -1,5 +1,3 @@
-![Deploy](https://github.com/damsean102/unusual-museums-api/workflows/Deploy/badge.svg?branch=main)
-
 # Unusual Museums API
 
 A small Flask API that serves museum data from a Google Sheet.
